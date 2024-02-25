@@ -2,19 +2,32 @@
 
 -- Identify hourly, daily, and weekly sales trends during the Black Friday event. Highlight periods of peak sales activity.
 
+-- hourly sales
 SELECT 
-    WEEK(sale_timestamp) AS week_of_sale,
-    DATE(sale_timestamp) AS day_of_sale,
     HOUR(sale_timestamp) AS hour_of_sale, 
     SUM(quantity*unit_price) AS total_sales_per_hour
 FROM 
     database_name.schema_name.fact_sales_trnx
 GROUP BY 
-    week_of_sale, 
-    day_of_sale, 
-    hour_of_sale 
-ORDER BY 
-    total_sales_per_hour DESC;
+    hour_of_sale;
+
+-- daily sales
+SELECT 
+    DATE(sale_timestamp) AS day_of_sale, 
+    SUM(quantity*unit_price) AS total_sales_per_day
+FROM 
+    database_name.schema_name.fact_sales_trnx
+GROUP BY 
+    day_of_sale;
+
+-- weekly sales
+SELECT 
+    WEEK(sale_timestamp) AS week_of_sale, 
+    SUM(quantity*unit_price) AS total_sales_per_week
+FROM 
+    database_name.schema_name.fact_sales_trnx
+GROUP BY 
+    week_of_sale;
 
 -- Analyze sales trends by geographic region or store location to understand regional preferences and demand patterns.
 
