@@ -12,12 +12,12 @@ subscription_path = subscriber.subscription_path(project_id, subscription_name)
 
 # Create Snowflake connection object
 conn = snowflake.connector.connect(
-    user='AVIGOEL',
-    password='Sachin@123',
-    account='dhxepfd-ia95296',
-    warehouse='COMPUTE_WH',
-    database='sales_inventory_management',
-    schema='project_tables'
+    user='USER_NAME',
+    password='PASSWORD',
+    account='account_name',
+    warehouse='warehouse_name',
+    database='database_name',
+    schema='schema_name'
 )
 
 # Create a cursor object
