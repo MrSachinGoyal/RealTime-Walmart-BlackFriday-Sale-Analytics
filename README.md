@@ -3,6 +3,9 @@
 # Overview
 This project focuses on building a robust real-time data warehousing solution tailored for analyzing sales data during Walmart's Black Friday event. The primary objective is to ingest, process, and visualize real-time sales and inventory data. By doing so, the solution empowers data-driven decision-making across various aspects of retail operations, including inventory management, marketing strategies, and customer experience enhancement. The ultimate goal is to leverage insights derived from this data to optimize sales performance, understand customer behavior patterns, and ensure efficient inventory management during one of the busiest shopping periods of the year.
 
+# Architecture
+https://github.com/MrSachinGoyal/RealTime-Walmart-BlackFriday-Sale-Analytics/blob/master/architecture.png
+
 # Technologies Used
 This project leverages various technologies to implement a healthcare data processing pipeline:
 
