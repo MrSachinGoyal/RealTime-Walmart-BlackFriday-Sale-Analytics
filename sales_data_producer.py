@@ -36,11 +36,6 @@ def random_datetime():
 
 
 def generate_mock_sales_data(transaction_id):
-    if (transaction_id >= 0) and (transaction_id) < 10:
-        transaction_id = f"T10" + str(transaction_id).zfill(2)
-    else:
-        transaction_id = f"T10" + str(transaction_id)
-
     product_id, unit_price = random.choice ([("P500", 299.99), ("P501", 199.99), ("P502", 49.99), ("P503", 129.99), ("P504", 79.99),
                                              ("P505", 19.99), ("P506", 39.99), ("P507", 499.99), ("P508", 89.99), ("P509", 159.99) ])
     
