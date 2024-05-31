@@ -1,7 +1,7 @@
 # Walmart Black Friday Insights: Real-Time Sales and Inventory Analytics
 
 # Overview
-This project focuses on building a robust real-time data warehousing solution to ingest, process, and visualize real-time sales and inventory data. By doing so, the solution empowers data-driven decision-making across various aspects of retail operations, including inventory management, marketing strategies, and customer experience enhancement. The ultimate goal is to leverage insights derived from this data to optimize sales performance, understand customer behavior patterns, and ensure efficient inventory management during one of the busiest shopping periods of the year.
+This project focuses on building a data warehousing solution to ingest, process, and visualize real-time sales and inventory data. By doing so, the solution empowers data-driven decision-making across various aspects of retail operations, including inventory management, marketing strategies, and customer experience enhancement. The ultimate goal is to leverage insights derived from this data to optimize sales performance, understand customer behavior patterns, and ensure efficient inventory management during one of the busiest shopping periods of the year.
 
 # Architecture
 ![Architecture](https://github.com/MrSachinGoyal/RealTime-Walmart-BlackFriday-Sale-Analytics/raw/master/architecture.png)
